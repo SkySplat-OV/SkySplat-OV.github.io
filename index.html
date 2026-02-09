@@ -53,6 +53,23 @@
     border-color: #000000 !important;
     color: #ffffff !important;
     opacity: 1 !important;
+  /* ===== GitHub button hover feedback (clickable feeling) ===== */
+  .publication-links .button.is-dark {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
+    cursor: pointer;
+  }
+  
+  .publication-links .button.is-dark:hover {
+    background-color: #111111 !important;
+    border-color: #111111 !important;
+  }
+  
+  .publication-links .button.is-dark:active {
+    transform: translateY(1px);
+  }
   }
   </style>
   
@@ -94,7 +111,9 @@
         </span> -->
 
         <span class="link-block">
-          <a class="button is-normal is-rounded is-dark is-static">
+            <a class="button is-normal is-rounded is-dark"
+               href="javascript:void(0);"
+               aria-disabled="true">
             <span class="icon"><i class="fab fa-github"></i></span>
             <span>Code (Coming Soon)</span>
           </a>
