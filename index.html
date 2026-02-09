@@ -47,19 +47,14 @@
       width: 100%;
       margin-top: 12px;
     }
-      /* ===== Force PURE BLACK GitHub button ===== */
-  .publication-links .button.is-dark {
-    background-color: #000000 !important;
-    border-color: #000000 !important;
-    color: #ffffff !important;
-    opacity: 1 !important;
-  /* ===== GitHub button hover feedback (clickable feeling) ===== */
+  /* ===== GitHub button: pure black + clickable feeling ===== */
   .publication-links .button.is-dark {
     background-color: #000000 !important;
     border-color: #000000 !important;
     color: #ffffff !important;
     opacity: 1 !important;
     cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.1s ease;
   }
   
   .publication-links .button.is-dark:hover {
@@ -70,7 +65,7 @@
   .publication-links .button.is-dark:active {
     transform: translateY(1px);
   }
-  }
+
   </style>
   
   <script>
