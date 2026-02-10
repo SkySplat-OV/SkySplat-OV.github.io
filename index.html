@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>SkySplat-OV: Generalizable Language Gaussian Splatting for Open-Vocabulary Scene Understanding from Sparse-View Satellite Images</title>
+  <title>SkySplat-OV: Generalizable Language Gaussian Splatting for Open-Vocabulary Scene Understanding from Sparse Satellite Views</title>
 
   <!-- Anonymous & ECCV-safe meta -->
   <meta name="robots" content="noindex, nofollow">
@@ -84,7 +84,7 @@
     <div class="container is-max-desktop has-text-centered">
 
       <h1 class="title is-1">
-        SkySplat-OV: Generalizable Language Gaussian Splatting for Open-Vocabulary Scene Understanding from Sparse-View Satellite Images
+        SkySplat-OV: Generalizable Language Gaussian Splatting for Open-Vocabulary Scene Understanding from Sparse Satellite Views
       </h1>
 
       <div class="publication-links">
@@ -137,13 +137,13 @@
 
     <div class="content has-text-justified">
       <p>
-        Abstract. Open-vocabulary scene understanding from sparse-view satellite images aims to recognize arbitrary semantic concepts in 3D without predefined categories.
+        Abstract. Open-vocabulary scene understanding aims to recognize arbitrary semantic concepts in 3D beyond a fixed set of categories. 
         Recent methods built upon 3D Gaussian Splatting (3DGS) enable scene understanding by distilling features from vision–language models, but most rely on per-scene optimization and dense observations, which limit scalability.
         More recent generalizable 3DGS methods show promise, but they perform poorly on sparse-view satellite imagery due to the pushbroom imaging mode of satellites, limited geometric constraints, and extreme scale variations.
-        To address these limitations, we propose SkySplat-OV, a feed-forward framework that integrates the RPC model into a generalizable language 3DGS pipeline.
+        To address these limitations, we propose SkySplat-OV, a feed-forward framework that integrates the rational polynomial coefficient (RPC) model into a generalizable language 3DGS pipeline. 
         A Geometry–Radiance–Semantics Fusion module, together with monocular relative height supervision and multi-view feature distillation, enables accurate Gaussian prediction and view-consistent segmentation results.
-        Compared to per-scene optimization methods, SkySplat-OV achieves up to 1070× speedup over LangSplatV2 with higher accuracy.
-        It also outperforms generalizable 3DGS baselines on two benchmarks and demonstrates strong cross-dataset generalization on MVS3D.
+        Compared to per-scene optimization methods, SkySplat-OV achieves up to $1070\times$ speedup over LangSplatV2 with higher accuracy. It also outperforms generalizable 3DGS baselines on two benchmarks, 
+        and demonstrates strong cross-dataset generalization on MVS3D.
       </p>
     </div>
 
