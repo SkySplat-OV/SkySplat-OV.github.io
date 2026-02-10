@@ -126,6 +126,15 @@
       <img src="static/images/fig1_top.png"
            alt="SkySplat-OV Teaser"
            style="width:100%; border-radius:12px;">
+          <!-- ===== Pipeline Description (placed directly under the figure) ===== -->
+          <div class="content has-text-justified" style="margin-top: 14px;">
+            <p>
+              Comparison with existing methods. 
+              (a) Generalization results on the DFC19 dataset. SkySplat-OV achieves the best performance among all competing methods. 
+              (b) Per-scene optimization results. SkySplat-OV reaches optimal performance within only 9.82 seconds.
+              (c) DSM reconstruction and semantic segmentation results on a representative area of interest (OMA315). We report the MAE, mIoU, and reconstruction time of SkySplat-OV and Uni3R.
+            </p>
+          </div>
     </div>
   </div>
 </section>
@@ -156,8 +165,8 @@
     <!-- ===== Pipeline Description (placed directly under the figure) ===== -->
     <div class="content has-text-justified" style="margin-top: 14px;">
       <p>
-        SkySplat-OV first extracts deep features from sparse views and constructs a cost volume via RPC warping for regularization and height regression, achieving geometric reconstruction (Sec. 3.1). 
-        It then employs a GRS-Fusion module to accurately predict Gaussian parameters (Sec. 3.2). 
+      SkySplat-OV first extracts deep features from sparse views and constructs a cost volume via RPC warping for regularization and height regression, achieving geometry reconstruction (Sec. 3.1). 
+        It then employs a GRS-Fusion module to accurately predict Gaussian parameters (Sec. 3.2).
         Additionally, monocular relative height and language feature extracted from pre-trained 2D vision foundation models (VFMs) are incorporated as auxiliary supervision, 
         combined with radiance supervision for self-supervised learning (Sec. 3.3). 
         Finally, the distilled language features are fed into the FPN structure and decoder of SAM3 to obtain open-vocabulary segmentation results (Sec. 3.4).
